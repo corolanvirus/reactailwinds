@@ -1,0 +1,61 @@
+{
+  "name": "react-fmr",
+  "version": "0.0.1",
+  "dependencies": {
+    "@babel/plugin-syntax-jsx": "^7.14.5",
+    "@fortawesome/fontawesome-free": "5.15.3",
+    "@headlessui/react": "^1.4.1",
+    "@heroicons/react": "^1.0.4",
+    "@popperjs/core": "2.9.1",
+    "@tailwindcss/forms": "0.2.1",
+    "autoprefixer": "10.2.5",
+    "chart.js": "2.9.4",
+    "node-sass": "^6.0.1",
+    "postcss": "8.2.8",
+    "react": "17.0.1",
+    "react-cookie-consent": "^6.4.1",
+    "react-dark-mode-toggle": "^0.2.0",
+    "react-dom": "17.0.1",
+    "react-draggable": "^4.4.4",
+    "react-player": "^2.9.0",
+    "react-redux": "^7.2.5",
+    "react-reveal": "^1.2.2",
+    "react-router": "5.2.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "4.0.3",
+    "react-simple-chatbot": "^0.6.1",
+    "react-timer-hook": "^3.0.5",
+    "styled-components": "^5.3.1",
+    "tailwindcss": "2.0.4",
+    "use-dark-mode": "^2.3.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm start",
+    "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "optionalDependencies": {
+    "typescript": "4.2.3"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.14.5"
+  }
+}
